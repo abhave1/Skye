@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.font-didot {
+  font-family: 'Didot', serif;
+}
