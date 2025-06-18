@@ -3,3 +3,16 @@
 .font-didot {
   font-family: 'Didot', serif;
 }
+
+@keyframes pulse-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 30px rgba(0, 55, 255, 0.15));
+  }
+  50% {
+    filter: drop-shadow(0 0 50px rgba(0, 55, 255, 0.3));
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
