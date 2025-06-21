@@ -7,6 +7,7 @@ export default function LandingPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState('');
   const [showModal, setShowModal] = useState(false);
+  const [signupComplete, setSignupComplete] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -52,11 +53,17 @@ export default function LandingPage() {
       });
 
       if (!response.ok) {
+        const data = await response.json();
+        if (data.error === 'You already signed up') {
+          setMessage('You already signed up');
+          setSignupComplete(true);
+          return;
+        }
         throw new Error('Signup failed');
       }
 
       setMessage('Thank you for signing up!');
-      setEmail('');
+      setSignupComplete(true);
     } finally {
       setIsLoading(false);
     }
@@ -98,14 +105,14 @@ export default function LandingPage() {
                     placeholder="Enter your email"
                     className="flex-1 py-4 text-[14px] md:text-[14px] px-6 bg-transparent text-white rounded-full text-lg font-normal focus:outline-none placeholder:text-white/60 disabled:opacity-50 h-12 md:h-14 overflow-hidden"
                     ref={inputRef}
-                    disabled={isLoading}
+                    disabled={isLoading || signupComplete}
                   />
                   <button
                     type="submit"
                     className="h-full px-6 py-4 text-[9px] md:text-[12px] bg-white text-black rounded-full font-semibold shadow-lg hover:bg-gray-200 transition disabled:opacity-50 disabled:cursor-not-allowed m-1 whitespace-nowrap"
-                    disabled={isLoading}
+                    disabled={isLoading || signupComplete}
                   >
-                    {isLoading ? 'Joining...' : 'Join the waitlist'}
+                    {isLoading ? 'Joining...' : signupComplete ? 'Registered' : 'Join the waitlist'}
                   </button>
                 </div>
               </div>
