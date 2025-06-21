@@ -15,7 +15,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Skye",
   description: "Your AI broker for buying and selling businesses effortlessly.",
-  themeColor: "#000000",
 };
 
 export default function RootLayout({
