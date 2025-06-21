@@ -90,7 +90,7 @@ export default function LandingPage() {
               Your AI broker for buying and selling businesses effortlessly.
             </p>
             <form onSubmit={handleSignup} noValidate className="mt-12 mb-12 flex flex-col items-center w-full">
-              <div className="w-full max-w-xl px-4">
+              <div className="w-full max-w-xl px-4 mx-auto">
                 <div
                   className="flex w-full rounded-full bg-white/10 border border-white/20 focus-within:border-white/40 transition-all cursor-text"
                   onClick={() => inputRef.current && inputRef.current.focus()}
