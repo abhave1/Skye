@@ -57,8 +57,6 @@ export default function LandingPage() {
 
       setMessage('Thank you for signing up!');
       setEmail('');
-    } catch (error) {
-      setMessage('Something went wrong. Please try again.');
     } finally {
       setIsLoading(false);
     }
