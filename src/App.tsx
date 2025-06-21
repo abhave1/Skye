@@ -63,7 +63,7 @@ export default function LandingPage() {
   };
 
   return (
-    <div className="w-full h-screen bg-black text-white overflow-hidden flex flex-col justify-between font-noto">
+    <div className="w-full h-[100dvh] bg-black text-white overflow-hidden flex flex-col justify-between font-noto">
       {/* Glowing Background Effect */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-purple-900/20 to-transparent pointer-events-none z-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-500/20 via-transparent to-transparent animate-pulse"></div>
