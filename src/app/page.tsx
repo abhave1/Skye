@@ -162,11 +162,11 @@ export default function LandingPage() {
         {/* rectangle svg */}
         <svg width="460" height="713" viewBox="0 0 460 713" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ bottom: 'env(safe-area-inset-bottom, 0)' }} className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[50vh] md:h-[65vh] w-auto z-10 -translate-y-[-1px] animate-pulse-glow">
         <g filter="url(#filter0_dddddd_9_61)">
-        <path d="M102.97 640C86.4179 640 73 625.038 73 606.582V106.418C73 87.9619 86.4179 73 102.97 73H357.03C373.582 73 387 87.9619 387 106.418V606.582C387 625.038 373.582 640 357.03 640H102.97Z" fill="url(#paint0_linear_9_61)" fill-opacity="0.4"/>
+        <path d="M102.97 640C86.4179 640 73 625.038 73 606.582V106.418C73 87.9619 86.4179 73 102.97 73H357.03C373.582 73 387 87.9619 387 106.418V606.582C387 625.038 373.582 640 357.03 640H102.97Z" fill="url(#paint0_linear_9_61)" fillOpacity="0.4"/>
         </g>
         <defs>
-        <filter id="filter0_dddddd_9_61" x="-0.00479126" y="-0.00479126" width="460.01" height="713.01" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <filter id="filter0_dddddd_9_61" x="-0.00479126" y="-0.00479126" width="460.01" height="713.01" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset/>
         <feGaussianBlur stdDeviation="0.869105">
@@ -212,11 +212,11 @@ export default function LandingPage() {
         <feBlend mode="normal" in="SourceGraphic" in2="effect6_dropShadow_9_61" result="shape"/>
         </filter>
         <linearGradient id="paint0_linear_9_61" x1="238.853" y1="82.5562" x2="271.493" y2="757.55" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#0037FF" stop-opacity="0.4"/>
-        <stop offset="0.588856" stop-color="#322681" stop-opacity="0.223177"/>
-        <stop offset="0.733779" stop-color="#1F2F57" stop-opacity="0.17966"/>
-        <stop offset="0.866007" stop-color="#495474" stop-opacity="0.139954"/>
-        <stop offset="1" stop-opacity="0.1"/>
+        <stop stopColor="#0037FF" stopOpacity="0.4"/>
+        <stop offset="0.588856" stopColor="#322681" stopOpacity="0.223177"/>
+        <stop offset="0.733779" stopColor="#1F2F57" stopOpacity="0.17966"/>
+        <stop offset="0.866007" stopColor="#495474" stopOpacity="0.139954"/>
+        <stop offset="1" stopOpacity="0.1"/>
         </linearGradient>
         </defs>
         </svg>
@@ -224,14 +224,14 @@ export default function LandingPage() {
         {/* Shadow SVG: 35% of viewport height */}
         <svg width="596" height="424" viewBox="0 0 596 424" fill="none" style={{ bottom: 'env(safe-area-inset-bottom, 0)' }} xmlns="http://www.w3.org/2000/svg" className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[30vh] md:h-[35vh] w-auto z-10 -translate-y-[-55px]">
           <g filter="url(#filter0_dddddd_30_6)">
-          <path d="M313.5 250L281.89 718.75H345.11L313.5 250Z" fill="#D9D9D9" fill-opacity="0.02"/>
+          <path d="M313.5 250L281.89 718.75H345.11L313.5 250Z" fill="#D9D9D9" fillOpacity="0.02"/>
           </g>
           <g filter="url(#filter1_dddddd_30_6)">
-          <path d="M282.5 250L250.89 718.75H314.11L282.5 250Z" fill="#D9D9D9" fill-opacity="0.02"/>
+          <path d="M282.5 250L250.89 718.75H314.11L282.5 250Z" fill="#D9D9D9" fillOpacity="0.02"/>
           </g>
           <defs>
-          <filter id="filter0_dddddd_30_6" x="31.8901" y="0" width="563.22" height="968.75" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <filter id="filter0_dddddd_30_6" x="31.8901" y="0" width="563.22" height="968.75" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+          <feFlood floodOpacity="0" result="BackgroundImageFix"/>
           <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
           <feOffset/>
           <feGaussianBlur stdDeviation="18.8597"/>
@@ -264,8 +264,8 @@ export default function LandingPage() {
           <feBlend mode="normal" in2="effect5_dropShadow_30_6" result="effect6_dropShadow_30_6"/>
           <feBlend mode="normal" in="SourceGraphic" in2="effect6_dropShadow_30_6" result="shape"/>
           </filter>
-          <filter id="filter1_dddddd_30_6" x="0.890076" y="0" width="563.22" height="968.75" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <filter id="filter1_dddddd_30_6" x="0.890076" y="0" width="563.22" height="968.75" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+          <feFlood floodOpacity="0" result="BackgroundImageFix"/>
           <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
           <feOffset/>
           <feGaussianBlur stdDeviation="18.8597"/>
