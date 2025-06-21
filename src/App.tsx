@@ -96,13 +96,13 @@ export default function LandingPage() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email"
-                    className="flex-1 py-4 text-[10px] md:text-[14px] px-6 bg-transparent text-white rounded-full text-lg font-normal focus:outline-none placeholder:text-white/60 disabled:opacity-50"
+                    className="flex-1 py-4 text-[14px] md:text-[14px] px-6 bg-transparent text-white rounded-full text-lg font-normal focus:outline-none placeholder:text-white/60 disabled:opacity-50 h-12 md:h-14 overflow-hidden"
                     ref={inputRef}
                     disabled={isLoading}
                   />
                   <button
                     type="submit"
-                    className="h-full px-6 py-4 text-[9px] md:text-[12px] bg-white text-black rounded-full font-semibold shadow-lg hover:bg-gray-200 transition disabled:opacity-50 disabled:cursor-not-allowed m-1"
+                    className="h-full px-6 py-4 text-[9px] md:text-[12px] bg-white text-black rounded-full font-semibold shadow-lg hover:bg-gray-200 transition disabled:opacity-50 disabled:cursor-not-allowed m-1 whitespace-nowrap"
                     disabled={isLoading}
                   >
                     {isLoading ? 'Joining...' : 'Join the waitlist'}
