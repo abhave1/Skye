@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { authenticateRequest } from '../utils/auth';
+import { authenticateRequest } from '../../utils/auth';
 
 export async function POST(req: NextRequest) {
   const JINA_API_KEY = process.env.JINA_API_KEY || "wrong key";
