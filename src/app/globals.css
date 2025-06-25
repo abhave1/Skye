@@ -10,6 +10,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-noto: var(--font-noto);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,6 +32,10 @@ html, body {
 
 .font-didot {
   font-family: 'Didot', serif;
+}
+
+.font-noto {
+  font-family: var(--font-noto), serif;
 }
 
 @keyframes pulse-glow {

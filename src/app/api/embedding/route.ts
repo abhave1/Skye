@@ -40,6 +40,6 @@ export async function POST(req: NextRequest) {
     const result = await response.json();
     return NextResponse.json(result.data[0].embedding);
   } catch (error) {
-    return new Response('Failed to fetch from Jina API', { status: 500 });
+    return new Response('Failed to fetch from Jina API. Error: ' + error, { status: 500 });
   }
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Noto_Serif } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 
@@ -10,6 +11,11 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const notoSerif = Noto_Serif({
+  variable: "--font-noto",
   subsets: ["latin"],
 });
 
@@ -32,13 +38,9 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
         {/* Theme color */}
         <meta name="theme-color" content="#000000" />
-        {/* Google Fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${notoSerif.variable} antialiased`}
       >
         {children}
         <Analytics />

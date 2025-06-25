@@ -55,7 +55,7 @@ export async function POST(req: NextRequest) {
         buffer += decoder.decode(value, { stream: true });
 
         // Process each line (SSE format: data: {...}\n)
-        let lines = buffer.split('\n');
+        const lines = buffer.split('\n');
         buffer = lines.pop()!; // Save the last (possibly incomplete) line for next chunk
 
         for (const line of lines) {
