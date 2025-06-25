@@ -1,5 +1,5 @@
 import { NextRequest } from 'next/server';
-import { authenticateRequest } from '../_utils/auth';
+import { authenticateRequest } from '../utils/auth';
 
 export const runtime = 'edge';
 
