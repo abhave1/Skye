@@ -72,7 +72,7 @@ const SignupPage = () => {
         <div className="container relative z-10 mx-auto flex items-center justify-between px-4 py-4">
           <Link href="/" className="flex items-center space-x-3">
             <Image 
-              src="/Adobe Express - file 1.svg" 
+              src="/favicon.svg" 
               alt="Grounding Logo" 
               width={80}
               height={80}

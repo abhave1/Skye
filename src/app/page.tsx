@@ -48,7 +48,7 @@ const Index = () => {
           <div className="container relative z-10 mx-auto flex items-center justify-between px-4 py-4">
             <div className="flex items-center space-x-3">
                 <Image 
-                  src="/Adobe Express - file 1.svg" 
+                  src="/favicon.svg" 
                   alt="Grounding Logo" 
                   width={80}
                   height={80}
@@ -322,7 +322,7 @@ const Index = () => {
               <div>
                 <div className="mb-4 flex items-center space-x-3">
                   <Image 
-                    src="/Adobe Express - file 1.svg" 
+                    src="/favicon.svg" 
                     alt="Grounding Logo" 
                     width={56}
                     height={56}
