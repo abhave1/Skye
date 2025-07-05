@@ -20,8 +20,8 @@ const notoSerif = Noto_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Skye",
-  description: "Your AI broker for buying and selling businesses effortlessly.",
+  title: "Grounding",
+  description: "Your verified business listing platform.",
 };
 
 export default function RootLayout({
@@ -33,11 +33,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Favicon */}
-        <link rel="icon" type="image/svg+xml" href="/white-circle.svg" />
+        <link rel="icon" type="image/svg+xml" sizes="42x42" href="/Adobe Express - file 1.svg" />
         {/* Viewport */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-        {/* Theme color */}
-        {/* <meta name="theme-color" content="#000000" /> */}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${notoSerif.variable} antialiased`}
