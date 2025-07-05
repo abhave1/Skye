@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { CheckCircle, Shield, Eye, MessageSquare, Users, ArrowRight, Leaf, Quote, Star, ArrowUp } from "lucide-react";
+import { CheckCircle, Shield, Eye, MessageSquare, Users, ArrowRight, Leaf, ArrowUp } from "lucide-react";
 
 const Index = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
