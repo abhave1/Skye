@@ -1,10 +1,11 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { CheckCircle, Shield, Eye, MessageSquare, Users, ArrowRight, Leaf, Quote, Star, TrendingUp } from "lucide-react";
+import { CheckCircle, Shield, Eye, MessageSquare, Users, ArrowRight, Leaf, Quote, Star } from "lucide-react";
 
 const Index = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -35,9 +36,11 @@ const Index = () => {
           }}></div>
           <div className="container relative z-10 mx-auto flex items-center justify-between px-4 py-4">
             <div className="flex items-center space-x-3">
-                <img 
+                <Image 
                   src="/Adobe Express - file 1.svg" 
                   alt="Grounding Logo" 
+                  width={80}
+                  height={80}
                   className="h-20 w-20"
                 />
             <span className="text-2xl font-bold" style={{color: 'var(--text-primary)'}}>Grounding</span>
@@ -129,7 +132,7 @@ const Index = () => {
                     Our roots run deep in verification and trust. Our branches reach wide to connect serious buyers with quality businesses. Our trunk stands firm against fraud and uncertainty.
                   </p>
                   <p>
-                    When you list with Grounding, you're not just posting an ad—you're planting your business in fertile ground where it can flourish and find its perfect new owner.
+                    When you list with Grounding, you&apos;re not just posting an ad—you&apos;re planting your business in fertile ground where it can flourish and find its perfect new owner.
                   </p>
                 </div>
                 <div className="mt-8 flex items-center space-x-6">
@@ -206,7 +209,7 @@ const Index = () => {
                     ))}
                   </div>
                   <blockquote className="mb-4 italic leading-relaxed" style={{color: 'var(--text-primary)'}}>
-                    "{story.quote}"
+                    &quot;{story.quote}&quot;
                   </blockquote>
                   <div className="flex items-center space-x-3">
                     <div className="flex h-10 w-10 items-center justify-center rounded-full font-semibold text-white" style={{
@@ -411,9 +414,11 @@ const Index = () => {
             <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
               <div>
                 <div className="mb-4 flex items-center space-x-3">
-                  <img 
+                  <Image 
                     src="/Adobe Express - file 1.svg" 
                     alt="Grounding Logo" 
+                    width={56}
+                    height={56}
                     className="h-14 w-14"
                   />
                   <span className="text-xl font-bold">Grounding</span>
