@@ -6,8 +6,10 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { CheckCircle, Shield, Eye, MessageSquare, Users, ArrowRight, Leaf, ArrowUp } from "lucide-react";
+import { useRouter } from 'next/navigation';
 
 const Index = () => {
+  const router = useRouter();
   const [hasScrolled, setHasScrolled] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
 
@@ -23,7 +25,7 @@ const Index = () => {
   }, []);
 
   const handleListBusiness = () => {
-    console.log('Navigate to seller intake');
+    router.push('/signup');
   };
 
   const scrollToTop = () => {
@@ -96,11 +98,17 @@ const Index = () => {
                 Plant Your Listing
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
-              <Button size="lg" variant="outline" className="px-8 py-4 text-lg transition-all hover:scale-105" style={{
-                borderColor: 'var(--text-primary)',
-                color: 'var(--text-primary)',
-                '--tw-hover-bg-opacity': '1',
-              } as React.CSSProperties}>
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="px-8 py-4 text-lg transition-all hover:scale-105" 
+                style={{
+                  borderColor: 'var(--text-primary)',
+                  color: 'var(--text-primary)',
+                  '--tw-hover-bg-opacity': '1',
+                } as React.CSSProperties}
+                onClick={handleListBusiness}
+              >
                 Explore Opportunities
               </Button>
             </div>
