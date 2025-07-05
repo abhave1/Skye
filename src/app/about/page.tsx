@@ -183,7 +183,7 @@ const Index = () => {
                 {
                   name: "Sarah Chen",
                   business: "Local Bakery",
-                  quote: "Like finding the perfect soil for a seed, Grounding helped me find the perfect buyer who truly understood my bakery's heart.",
+                  quote: "Like finding the perfect soil for a seed, Grounding helped me find the perfect buyer who truly understood my bakery&apos;s heart.",
                   rating: 5
                 },
                 {
@@ -232,7 +232,9 @@ const Index = () => {
         <section id="how-it-works" className="py-20">
           <div className="container mx-auto px-4">
             <div className="mb-16 text-center">
-              <h2 className="mb-4 text-4xl font-bold" style={{color: 'var(--text-primary)'}}>Let's Get You Grounded</h2>
+              <h2 className="mb-4 text-4xl font-bold" style={{color: 'var(--text-primary)'}}>
+                Let&apos;s Get You Grounded
+              </h2>
               <p className="mx-auto max-w-2xl text-xl" style={{color: 'var(--text-primary)'}}>
                 Our transparent 4-step process takes just 10 minutes and puts you in complete control
               </p>
