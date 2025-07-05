@@ -7,8 +7,10 @@ import { Toast } from '@/components/ui/toast';
 import { ArrowLeft, CheckCircle, Users, Shield } from "lucide-react";
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const SignupPage = () => {
+  const router = useRouter();
   const [email, setEmail] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -78,15 +80,18 @@ const SignupPage = () => {
             />
             <span className="text-2xl font-bold" style={{color: 'var(--text-primary)'}}>Grounding</span>
           </Link>
-          <Link href="/">
-            <Button variant="outline" className="flex items-center space-x-2 transition-all hover:scale-105" style={{
+          <Button 
+            variant="outline" 
+            className="flex items-center space-x-2 transition-all hover:scale-105" 
+            style={{
               borderColor: 'var(--text-primary)',
               color: 'var(--text-primary)',
-            }}>
-              <ArrowLeft className="h-4 w-4" />
-              <span>Back to Home</span>
-            </Button>
-          </Link>
+            }}
+            onClick={() => router.back()}
+          >
+            <ArrowLeft className="h-4 w-4" />
+            <span>Back to Home</span>
+          </Button>
         </div>
       </header>
 
@@ -148,7 +153,7 @@ const SignupPage = () => {
                     isLoading ? 'opacity-50 cursor-not-allowed' : ''
                   }`}
                   style={{
-                    backgroundColor: isLoading ? 'var(--text-primary)/30' : 'var(--primary)',
+                    backgroundColor: isLoading ? 'var(--text-primary)/30' : 'var(--text-secondary)',
                     color: 'white',
                   }}
                   disabled={isLoading}
@@ -169,18 +174,17 @@ const SignupPage = () => {
                 <p className="mb-6 text-lg" style={{color: 'var(--text-primary)'}}>
                   Thank you for your interest in Grounding. We&apos;ll notify you as soon as we&apos;re ready to welcome you to our beta.
                 </p>
-                <Link href="/">
-                  <Button 
-                    variant="outline" 
-                    className="px-6 py-3 transition-all hover:scale-105"
-                    style={{
-                      borderColor: 'var(--text-primary)',
-                      color: 'var(--text-primary)',
-                    }}
-                  >
-                    Back to Home
-                  </Button>
-                </Link>
+                <Button 
+                  variant="outline" 
+                  className="px-6 py-3 transition-all hover:scale-105"
+                  style={{
+                    borderColor: 'var(--text-primary)',
+                    color: 'var(--text-primary)',
+                  }}
+                  onClick={() => router.back()}
+                >
+                  Back to Home
+                </Button>
               </div>
             )}
           </Card>

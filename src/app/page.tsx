@@ -303,8 +303,8 @@ const Index = () => {
               size="lg" 
               className="px-8 py-4 text-lg font-semibold transition-all hover:scale-105"
               style={{
-                backgroundColor: 'white',
-                color: 'var(--text-primary)',
+                backgroundColor: 'var(--text-secondary)',
+                color: 'white',
                 '--tw-hover-bg-opacity': '0.9',
               } as React.CSSProperties}
               onClick={handleListBusiness}
