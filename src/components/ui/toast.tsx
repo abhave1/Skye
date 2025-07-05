@@ -37,12 +37,7 @@ export const Toast: React.FC<ToastProps> = ({
     return <AlertCircle className="h-5 w-5" style={{color: 'hsl(48, 96%, 40%)'}} />;
   };
 
-  const getBackgroundColor = () => {
-    if (type === 'success') {
-      return 'hsl(142, 76%, 96%)';
-    }
-    return 'hsl(48, 96%, 89%)';
-  };
+
 
   return (
     <div className="fixed bottom-4 right-4 z-50 animate-in slide-in-from-bottom-2">

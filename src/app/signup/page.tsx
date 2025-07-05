@@ -107,7 +107,7 @@ const SignupPage = () => {
             </h1>
             <p className="text-xl leading-relaxed" style={{color: 'var(--text-primary)'}}>
               Sign up below to be among the first to experience our trust-first business marketplace. 
-              We're currently in beta and accepting early users by invitation only.
+              We&apos;re currently in beta and accepting early users by invitation only.
             </p>
           </div>
 
@@ -164,10 +164,10 @@ const SignupPage = () => {
                   <CheckCircle className="h-8 w-8" style={{color: 'var(--text-primary)'}} />
                 </div>
                 <h3 className="mb-4 text-2xl font-bold" style={{color: 'var(--text-primary)'}}>
-                  You're on the List!
+                  You&apos;re on the List!
                 </h3>
                 <p className="mb-6 text-lg" style={{color: 'var(--text-primary)'}}>
-                  Thank you for your interest in Grounding. We'll notify you as soon as we're ready to welcome you to our beta.
+                  Thank you for your interest in Grounding. We&apos;ll notify you as soon as we&apos;re ready to welcome you to our beta.
                 </p>
                 <Link href="/">
                   <Button 
