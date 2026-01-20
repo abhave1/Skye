@@ -60,6 +60,7 @@ const Index = () => {
             <a href="#how-it-works" className="transition-colors hover:text-secondary" style={{color: 'var(--text-primary)'}}>How It Works</a>
             <a href="#verification" className="transition-colors hover:text-secondary" style={{color: 'var(--text-primary)'}}>Verification</a>
             <a href="#trust" className="transition-colors hover:text-secondary" style={{color: 'var(--text-primary)'}}>Trust & Safety</a>
+            <a href="/voice-chat" className="transition-colors hover:text-secondary" style={{color: 'var(--text-primary)'}}>Voice Chat</a>
             <Button variant="outline" className="transition-all hover:scale-105" style={{
               borderColor: 'var(--text-primary)',
               color: 'var(--text-primary)',
@@ -359,6 +360,7 @@ const Index = () => {
                   <li><a href="#" className="transition-colors hover:text-white">Help Center</a></li>
                   <li><a href="#" className="transition-colors hover:text-white">Trust & Safety</a></li>
                   <li><a href="#" className="transition-colors hover:text-white">Contact Us</a></li>
+                  <li><a href="/voice-chat" className="transition-colors hover:text-white">Voice Chat</a></li>
                 </ul>
               </div>
             </div>
